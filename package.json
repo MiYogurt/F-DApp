@@ -1,0 +1,28 @@
+{
+  "name": "ethereum-contract-workflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node scripts/compile.js",
+    "pretest": "npm run compile",
+    "test": "jest",
+    "predeploy": "npm run compile",
+    "deploy": "node scripts/deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^7.2.1",
+    "fs-extra": "^6.0.1",
+    "ganache-cli": "^6.1.0",
+    "jest": "^22.4.4",
+    "ololog": "^1.1.103",
+    "pretty-error": "^2.1.1",
+    "q-i": "^2.0.1",
+    "solc": "^0.4.24",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.0.0-beta.34"
+  }
+}
